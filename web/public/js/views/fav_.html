@@ -1,0 +1,7 @@
+			<li class="timer<%= id %>">
+				<a href="#" rel="<%= id %>" class="removeTag">HIDE</a>
+				<a <%= !running ? 'style="display:none;"' : '' %> href="#" rel="<%= id %>" class="stop">&nbsp;STOP&nbsp;</a>
+				<a <%= running ? 'style="display:none;"' : '' %> href="#" rel="<%= id %>" class="start">START</a>
+				<a href="/tag/<%= tag_title %>" class="tagTitle"><%= tag_title %></a>
+				<span class="clock"></span>
+			</li>

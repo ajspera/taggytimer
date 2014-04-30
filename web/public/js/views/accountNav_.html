@@ -1,0 +1,15 @@
+<% if(!loggedIn){ %>
+<li class="linklogin"  >
+	<a href="/login">Login</a>
+</li>
+<li class="last linksignup"  >
+	<a href="/signup">Sign Up</a>
+</li>
+<% } else { %>
+<li class="linkaccount">
+	<a href="/account">Account</a>
+</li>
+<li>
+	<a class="logout" href="">Logout</a>
+</li>
+<% } %>

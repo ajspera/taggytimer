@@ -1,0 +1,18 @@
+<div class="padded">
+	<h1>Favs</h1>
+	<ul class="errors">
+	
+	</ul>
+	<form id="tagsForm" action="">
+		<div class="">
+			<label for="tag_title">add timer</label>
+			<input id="tag_title" name="tag_title" type="text" value="" />
+			<input class="noclear" type="submit" value="add" />
+		</div>
+	</form>
+	<ul class="timerList">
+		<% _.each(timers, function(timer){ %>
+			<%= template('fav', timer) %>
+		<% }); %>
+	</ul>
+</div>
